@@ -7,14 +7,14 @@ const router = Router();
 // @route GET /,
 
 router.get('/', (req, res) => {
-    res.send('login');
+    res.render('login');
 });
 
 // @desc Dashboard
 // @route GET /,
 
 router.get('/dashboard', (req, res) => {
-    res.send('dashbaord');
+    res.render('dashboard');
 });
 
 

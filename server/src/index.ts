@@ -4,6 +4,7 @@ import morgan from 'morgan';
 // import connectDB from './db/db';
 import { engine } from 'express-handlebars';
 import router from './routes';
+import path from "path";
 //inits
 const APP = express(); // express
 dotenv.config({ path: "./config/config.env" }); // dotenv.config
@@ -20,6 +21,7 @@ APP.use(express.urlencoded({ extended: true })); // express urlencoded
 APP.use(morgan('combined')); // combine - morgan
 APP.engine('.hbs', engine({ defaultLayout: 'main', extname: '.hbs' }));
 APP.set('view engine', '.hbs');
+APP.use(express.static(path.join(__dirname, 'public')));
 
 
 
