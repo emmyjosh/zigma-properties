@@ -1,0 +1,42 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "zigma server",
+  "main": "app.ts",
+  "scripts": {
+    "dev": "nodemon ./src/app",
+    "start": "node ./src/app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emmyjosh/zigma-properties.git"
+  },
+  "keywords": [
+    "zigma"
+  ],
+  "author": "ibold-dev",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/emmyjosh/zigma-properties/issues"
+  },
+  "homepage": "https://github.com/emmyjosh/zigma-properties#readme",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.1",
+    "mongoose": "^7.4.5"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^5.0.0",
+    "@types/express": "^4.17.17",
+    "@types/jsonwebtoken": "^9.0.2",
+    "@types/mongoose": "^5.11.97",
+    "@types/morgan": "^1.9.5",
+    "@types/node": "^20.5.7",
+    "dotenv": "^16.3.1",
+    "morgan": "^1.10.0",
+    "nodemon": "^3.0.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2"
+  }
+}
