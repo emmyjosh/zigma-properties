@@ -1,0 +1,138 @@
+/** @format */
+
+@media (max-width: 1024px) {
+}
+@media (max-width: 992px) {
+  .sm-padding {
+    padding: 15px;
+  }
+  .header-section .navbar-brand {
+    height: 80px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+  }
+  .menu-btn,
+  .js #mainmenu {
+    display: none;
+  }
+  .project-2 .project-item,
+  .js .slicknav_menu {
+    /* display: block; */
+  }
+  .about-content h2 {
+    font-size: 24px;
+    line-height: 36px;
+  }
+  .year-box {
+    padding-left: 0;
+  }
+  .error-content .error-info {
+    padding-left: 10px;
+  }
+  .counter-content {
+    text-align: left;
+    padding-left: 70px;
+  }
+  .counter-wrap .col-lg-4:last-child {
+    margin-top: 50px;
+  }
+}
+@media all and (min-width: 480px) and (max-width: 768px) {
+}
+@media all and (max-width: 767px) {
+  body,
+  p {
+    font-size: 12px;
+    line-height: 22px;
+  }
+  h1 {
+    font-size: 30px;
+  }
+  h2 {
+    font-size: 22px;
+  }
+  h3 {
+    font-size: 16px;
+  }
+  p br {
+    display: none;
+  }
+  .padding {
+    padding: 60px 0;
+  }
+  .xs-padding {
+    padding: 15px;
+  }
+  .hero-section {
+    height: 350px;
+  }
+  .hero-section .scroll-down {
+    display: none;
+  }
+  .hero-section h1 {
+    font-size: 40px;
+    line-height: 1;
+    margin: 0 0 10px;
+  }
+  .page-header {
+    height: 250px;
+  }
+  .page-content h2 {
+    font-size: 30px;
+    margin: 0;
+  }
+  .about-content h2 {
+    font-size: 24px;
+    line-height: 36px;
+  }
+  .cta-content h2 {
+    font-size: 28px;
+    line-height: 1.2;
+  }
+  .error-content {
+    display: block;
+  }
+  .error-content .error-info h2 {
+    font-size: 120px;
+    line-height: 120px;
+    margin-bottom: 30px;
+  }
+  .error-content .error-info a {
+    display: block;
+  }
+  .contact-form .form-group .col-sm-6:first-child {
+    margin-bottom: 15px;
+  }
+  .contact-info h2 {
+    line-height: 28px;
+  }
+  .sidebar-wrap {
+    padding-left: 0;
+  }
+  .blog-single-content h2 a {
+    font-size: 22px;
+    line-height: 28px;
+  }
+  .blog-single-content h2 {
+    line-height: 28px;
+  }
+  blockquote p {
+    line-height: 32px;
+  }
+  .year-bg {
+    width: 100%;
+  }
+}
+@media all and (max-width: 580px) {
+  .subscribe-form {
+    width: 100%;
+  }
+  .counter-wrap .col-lg-4:first-child {
+    margin-bottom: 50px;
+  }
+}
+@media all and (max-width: 420px) {
+}
+@media all and (max-width: 380px) {
+}
