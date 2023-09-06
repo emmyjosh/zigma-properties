@@ -19,6 +19,8 @@
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/fontawesome.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="assets/owl-carousel/owl.carousel.js"></script>
 
     <link rel="stylesheet" href="css/themify-icons.css">
 
@@ -514,18 +516,23 @@
                 <span>Projects</span>
                 <h2>Latest works</h2>
             </div>
-            <div id="projects-carousel" class="projects-carousel owl-carousel">
-                <div class="project-item">
-                    <img src="img/project-1.jpg" alt="projects">
-                    <div class="overlay"></div>
-                    <a href="img/project-1.jpg" class="view-icon img-popup" data-gall="myGallery"> <i
-                            class="fas fa-expand"></i></a>
-                    <div class="projects-content">
-                        <a href="projects.html" class="category">Interior</a>
-                        <h3><a href="project-single.html" class="tittle">Rectangular house near italy</a></h3>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="project-item swiper-slide">
+                        <img src="./img//project-1.jpg" alt="project-1">
+                        <div class="overlay"></div>
+                        <a href="img/project-1.jpg" class="view-icon img-popup" data-gall="myGallery"> <i
+                                class="fas fa-expand"></i></a>
+                        <div class="projects-content">
+                            <h2><a href="projects.html" class="category">Design</a></h2>
+                            <h4><a href="project-single.html" class="tittle">giving you the Best</a></h4>
+                        </div>
                     </div>
-                </div>
 
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
             </div>
         </div>
     </section>
@@ -684,6 +691,12 @@
     <script src="../../maps/api/js?key=AIzaSyCPH8h1UpcK01BdcvoZeOzq-_wJqRxN1Pc"></script>
 
     <script src="js/main.js"></script>
+    <script src="./js/work.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
     <div style="margin-top: 40px; margin-bottom: 0;">
         <a href="https://wa.me/+2348051547333" style="color: gray;">created by PACATECH</a>
     </div>
