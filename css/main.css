@@ -964,6 +964,8 @@ ul.nav > li > a.active {
 .projects-section .container-fluid {
   padding: 0;
 }
+.projects-carousel {
+}
 .project-item {
   position: relative;
   overflow: hidden;
@@ -977,7 +979,7 @@ ul.nav > li > a.active {
   height: 100%;
   left: 0;
   top: 0;
-  /* display: block; */
+  display: block;
   visibility: hidden;
   opacity: 0;
   z-index: 1;

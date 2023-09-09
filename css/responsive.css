@@ -18,7 +18,7 @@
   }
   .project-2 .project-item,
   .js .slicknav_menu {
-    /* display: block; */
+    display: block;
   }
   .about-content h2 {
     font-size: 24px;
