@@ -40,7 +40,7 @@ const works = [
   },
   {
     id: 5,
-    image: "../img/project-1.jpg",
+    image: "../img/project-5.jpg",
     category: "Design",
     title: "Rectangular house near italy",
   },
@@ -52,25 +52,25 @@ const works = [
   },
   {
     id: 7,
-    image: "../img/project-6.jpg",
-    category: "Import/Export",
-    title: "Rectangular house near italy",
-  },
-  {
-    id: 6,
     image: "../img/services-1.jpg",
     category: "Import/Export",
     title: "Rectangular house near italy",
   },
   {
     id: 6,
-    image: "../img/services-4.jpg",
+    image: "../img/services-2.jpg",
     category: "Import/Export",
     title: "Rectangular house near italy",
   },
   {
     id: 6,
     image: "../img/services-6.jpg",
+    category: "Import/Export",
+    title: "Rectangular house near italy",
+  },
+  {
+    id: 6,
+    image: "../img/services-4.jpg",
     category: "Import/Export",
     title: "Rectangular house near italy",
   },
@@ -101,7 +101,7 @@ window.addEventListener("DOMContentLoaded", function () {
     console.log(works);
     return `  <div class="col-lg-4 col-sm-6 padding-15">
                     <div class="project-item">
-                        <img class="carD" src=${works.image} alt="projects">
+                        <img src=${works.image} alt="projects">
                         <div class="overlay"></div>
                         <a href="img/project-1.jpg" class="view-icon img-popup"> <i class="fas fa-expand"></i></a>
                         <div class="projects-content">

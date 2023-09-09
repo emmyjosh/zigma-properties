@@ -2251,3 +2251,6 @@ blockquote span {
 #about {
   padding: 40px;
 }
+.resize-image {
+  height: 4000px;
+}
