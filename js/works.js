@@ -101,7 +101,7 @@ window.addEventListener("DOMContentLoaded", function () {
     console.log(works);
     return `  <div class="col-lg-4 col-sm-6 padding-15">
                     <div class="project-item">
-                        <img src=${works.image} alt="projects">
+                        <img src=${works.image} class="resize-image" alt="projects">
                         <div class="overlay"></div>
                         <a href="img/project-1.jpg" class="view-icon img-popup"> <i class="fas fa-expand"></i></a>
                         <div class="projects-content">

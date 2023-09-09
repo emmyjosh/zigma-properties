@@ -2252,5 +2252,6 @@ blockquote span {
   padding: 40px;
 }
 .resize-image {
-  height: 4000px;
+  height: 400px;
+  width: 100%;
 }
