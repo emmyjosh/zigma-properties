@@ -1,0 +1,98 @@
+<div class="d-flex justify-content-between flex-wrap flex-md nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+    <h1 class="h2">Dashboard</h1>
+    <div class="btn-toolbar mb-2 mb-md 0">
+        <div class="btn-group me-2">
+            <a href="/add" class="btn btn-sm btn-outline-secondary"><b>+ New Project</b></a>
+        </div>
+    </div>
+</div>
+<div>
+    <div class="grid row ">
+
+        <div class="row ">
+            <% Projects.forEach(element=> { %>
+                <div class="col-md-6 col-lg-3 col-sm-2 card cd-image">
+                    <img src="<%= element.imageUrl %>" class="card-img-top" alt="<%= element.title %>">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <%= element.title %>
+                        </h5>
+                        <h6 class="card-text">
+                            <%= element.category %>
+                        </h6>
+                    </div>
+                    <div class="row button-crud">
+                        <!-- <div class="col">
+
+                            <a href="/views/<%= element._id %>" class="btn btn-primary"><i class="bi bi-eye"></i>
+
+                            </a>
+                        </div> -->
+                        <!-- <div class="col">
+
+                            <a href="/edit/<%= element._id %>" class="btn btn-warning"><i class="bi bi-pencil"></i>
+                            </a>
+                        </div> -->
+                        <div class="col">
+
+                            <form action="/edit/<%= element._id %>?_method=DELETE" method="POST">
+                                <button class="btn btn-danger">
+                                    <i class="bi bi-trash-fill"></i>
+                                </button>
+                            </form>
+
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <% }) %>
+
+        </div>
+    </div>
+</div>
+<div>
+</div>
+<% if (Projects.length> 0) { %>
+    <nav aria-label="Dashboard Pagination">
+        <ul class="pagination justify-content-center mt-5">
+
+            <% if (currentPage==1) { %>
+                <li class="page-item disabled"><a href="#" class="page-link">First</a></li>
+                <% } else { %>
+                    <li class="page-item"><a href="/?page=1" class="page-link">First</a></li>
+                    <% } %>
+
+                        <% var i=(Number(currentPage)> 5 ? Number(currentPage) - 4 : 1) %>
+                            <% if (i !==1) { %>
+                                <li class="page-item disabled"><a href="#" class="page-link">...</a></li>
+                                <% } %>
+
+                                    <% for (; i <=(Number(currentPage) + 4) && i <=pages; i++) { %>
+                                        <% if (i==currentPage) { %>
+                                            <li class="page-item disabled"><a href="#" class="page-link">
+                                                    <%= i %>
+                                                </a></li>
+                                            <% } else { %>
+                                                <li class="page-item"><a href="/?page=<%= i %>" class="page-link">
+                                                        <%= i %>
+                                                    </a></li>
+                                                <% } %>
+                                                    <% if (i==Number(currentPage) + 4 && i < pages) { %>
+                                                        <li class="page-item disabled"><a href="#"
+                                                                class="page-link">...</a></li>
+                                                        <% } %>
+                                                            <% } %>
+
+                                                                <li class="page-item">
+                                                                    <a class="page-link"
+                                                                        href="/?page=<%= Number(currentPage) + 1 %>">Next</a>
+                                                                </li>
+
+        </ul>
+    </nav>
+    <% } else { %>
+        <div class="text-center mt-3">
+            <a href="/?page=1" class="btn btn-primary">Return to First Page</a>
+        </div>
+        <% } %>
