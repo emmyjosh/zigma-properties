@@ -17,7 +17,7 @@ const fetchDataAndPopulateCarousels = async () => {
       data = await response.json(); // Parse response as JSON
     }
 
-    console.log("HTML has been inserted into projectCarousel.");
+    // console.log("HTML has been inserted into projectCarousel.");
 
     const projectD = document.getElementById("projectD");
     const displayProjects = data.project.map((project, index) => {

@@ -9,12 +9,6 @@ const methodOverride = require("method-override");
 const connectDB = require("./server/config/db");
 const cors = require("cors"); // Import the 'cors' middleware
 
-// Initialize Twilio client with your Account SID and Auth Token
-const client = new twilio(
-  process.env.TWILIO_ACCOUNT_SID,
-  process.env.TWILIO_AUTH_TOKEN
-);
-
 const bodyParser = require("body-parser");
 // const Project = require("./server/models/Project");
 const app = express();
