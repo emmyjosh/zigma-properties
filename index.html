@@ -12,7 +12,8 @@
     <meta name="author" content="DynamicLayers">
     <title>Home</title>
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
-
+    <link rel='stylesheet' href='https://unpkg.com/swiper/swiper-bundle.min.css'>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <link href="npm/bootstrap%405.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <script src="npm/bootstrap%405.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
@@ -20,6 +21,10 @@
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/fontawesome.min.css">
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <!-- Include Swiper Library -->
+    <link rel="stylesheet" href="path/to/swiper.min.css">
+    <script src="path/to/swiper.min.js"></script>
+
     <script src="assets/owl-carousel/owl.carousel.js"></script>
 
     <link rel="stylesheet" href="css/themify-icons.css">
@@ -511,22 +516,24 @@
             </div>
         </div>
     </section>
-    <section class="projects-section padding">
+    <!-- <section class="projects-section padding">
         <div class="container-fluid">
             <div class="section-heading text-center mb-40">
                 <span>Projects</span>
                 <h2>Latest works</h2>
             </div>
             <div class="swiper mySwiper">
-                <div class="project-item swiper-slide">
-                    <img src="./img/project-5.jpg" alt="project-1">
-                    <div class="overlay"></div>
-                    <a href="img/project-1.jpg" class="view-icon img-popup" data-gall="myGallery">
-                        <i class="fas fa-expand"></i>
-                    </a>
-                    <div class="projects-content">
-                        <h2><a href="projects.html" class="category">Designs</a></h2>
-                        <h4><a href="project-single.html" class="tittle">giving you the Best</a></h4>
+                <div id="projectCarousel" class="projectcarousel">
+                    <div class="project-item swiper-slide">
+                        <img src="./img/project-5.jpg" alt="project-1">
+                        <div class="overlay"></div>
+                        <a href="img/project-1.jpg" class="view-icon img-popup" data-gall="myGallery">
+                            <i class="fas fa-expand"></i>
+                        </a>
+                        <div class="projects-content">
+                            <h2><a href="projects.html" class="category">Designs</a></h2>
+                            <h4><a href="project-single.html" class="tittle">giving you the Best</a></h4>
+                        </div>
                     </div>
                 </div>
                 <div class="swiper-button-next"></div>
@@ -534,7 +541,7 @@
                 <div class="swiper-pagination"></div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <section class="testimonial-section bg-grey padding">
         <div class="dots"></div>
@@ -653,7 +660,7 @@
             </div>
         </div>
     </section>
-    <a href="./test.html">test</a>
+
     <footer class="footer-section align-center">
         <div class="container">
             <p>&copy; 2023 zigma properties & investment ltd</p>
