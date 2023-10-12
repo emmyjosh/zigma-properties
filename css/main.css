@@ -2262,3 +2262,49 @@ blockquote span {
   height: 350px; /* Adjust the height as needed */
   object-fit: cover; /* To maintain the image aspect ratio and cover the entire space */
 }
+/* Define the default styles for your carousel items */
+.project-item {
+  width: 100%;
+  max-width: 300px; /* Adjust the maximum width as needed */
+  margin: 0 auto;
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
+  /* filter: blur(0.5px); */
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+/* Add more specific styles for different screen sizes using media queries */
+@media (min-width: 768px) {
+  /* Adjust styles for screens with a minimum width of 768px (tablets and larger) */
+  .project-item {
+    max-width: 400px; /* Adjust the maximum width for tablets */
+  }
+}
+
+@media (min-width: 992px) {
+  /* Adjust styles for screens with a minimum width of 992px (small desktops and larger) */
+  .project-item {
+    max-width: 500px; /* Adjust the maximum width for small desktops */
+  }
+}
+
+/* You can add more media queries as needed for larger screens */
+.projects-content .category {
+  font-size: 15px;
+  font-weight: 900;
+  color: #ffc107;
+}
+.projects-content .category:hover {
+  color: #405c07;
+}
+.projects-content a {
+  color: #ffc107;
+  font-weight: 600;
+  font-size: 15px;
+}
+.projects-content a:hover {
+  color: #405c07;
+}

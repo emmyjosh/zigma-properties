@@ -41,6 +41,7 @@
     <link rel="stylesheet" href="css/main.css">
 
     <link rel="stylesheet" href="css/responsive.css">
+
     <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 </head>
 
@@ -90,30 +91,37 @@
                 </div>
                 <div class="col-md-6 padding-15">
                     <div class="contact-form">
-                        <form action="contact.php" method="post" id="ajax_form" class="form-horizontal">
+                        <form class="form-horizontal" action="/send-email" method="post">
+
                             <div class="form-group colum-row row">
                                 <div class="col-sm-6">
-                                    <input type="text" id="name" name="name" class="form-control" placeholder="Name" required="">
+                                    <input type="text" name="name" class="form-control name" placeholder="Name"
+                                        required>
                                 </div>
                                 <div class="col-sm-6">
-                                    <input type="email" id="email" name="email" class="form-control" placeholder="Email" required="">
+                                    <input type="email" name="email" class="form-control email" placeholder="Email"
+                                        required>
                                 </div>
                             </div>
                             <div class="form-group row">
                                 <div class="col-md-12">
-                                    <textarea id="message" name="message" cols="30" rows="5" class="form-control message" placeholder="Message" required=""></textarea>
+                                    <textarea name="message" cols="30" rows="5" class="form-control message"
+                                        placeholder="Message" required></textarea>
                                 </div>
                             </div>
                             <div class="form-group row">
                                 <div class="col-md-12">
-                                    <button id="submit" class="default-btn" type="submit">Send Message</button>
+                                    <button class="default-btn" type="submit">Send Message</button>
                                 </div>
                             </div>
                             <div id="form-messages" class="alert" role="alert"></div>
                         </form>
                     </div>
+
                 </div>
+
             </div>
+        </div>
         </div>
     </section>
     <section class="widget-section padding">
@@ -140,7 +148,7 @@
                     <div class="widget-content">
                         <h4>Headquaters</h4>
                         <p>House 52 Zone D Behind Pottery Center Ushafa Abuja</p>
-                        <span>emmycloxzy07@gmail.com</span>
+                        <span>Zigmaproperties@gmail .com</span>
                         <span>(+234) 803 6112 019</span>
                     </div>
                 </div>
@@ -151,7 +159,8 @@
                         <div class="subscribe-box clearfix">
                             <div class="subscribe-form-wrap">
                                 <form action="#" class="subscribe-form">
-                                    <input type="email" name="email" id="subs-email" class="form-input" placeholder="Enter Your Email Address...">
+                                    <input type="email" name="email" id="subs-email" class="form-input"
+                                        placeholder="Enter Your Email Address...">
                                     <button type="submit" class="submit-btn">Subscribe</button>
                                     <div id="subscribe-result">
                                         <p class="subscription-success"></p>
@@ -171,12 +180,34 @@
         </div>
     </footer>
     <a data-scroll="" href="#header" id="scroll-to-top"><i class="arrow_carrot-up"></i></a>
-
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
     <script src="js/vendor/jquery-1.12.4.min.js"></script>
-
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="js/vendor/bootstrap.min.js"></script>
 
+    <script>
+
+        const form = document.querySelector('.form-horizontal');
+        const name = document.querySelector('.name');
+        const email = document.querySelector('.email').value;
+        const message = document.querySelector('.message');
+
+        function sendEmail() {
+            Email.send({
+                Host: "smtp.elasticemail.com",
+                Username: "zigmaproperties7@gmail.com",
+                Password: "CBE3A79D6616505A1804E2CE41E7A5A43D33",
+                To: 'zigmaproperties7@gmail.com',
+                From: email,
+                Subject: "This is the subject",
+                Body: message.value
+            }).then(
+                message => alert(message)
+            );
+        }
+    </script>
+    <script src="/email.js"></script>
     <script src="js/vendor/tether.min.js"></script>
 
     <script src="js/vendor/jquery.slicknav.min.js"></script>
@@ -202,6 +233,8 @@
     <script src="../../maps/api/js?key=AIzaSyCPH8h1UpcK01BdcvoZeOzq-_wJqRxN1Pc"></script>
 
     <script src="js/main.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
 
     <script src="js/contact.js"></script>
     <div style="margin-top: 40px; margin-bottom: 0;">
