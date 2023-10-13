@@ -8,7 +8,7 @@ const fetchDataAndPopulateCarousels = async () => {
   try {
     // Fetch data if not already fetched
     if (data === null) {
-      const response = await fetch("http://localhost:5000/api/projects");
+      const response = await fetch("https://zigma-backend-w96a.onrender.com");
 
       if (!response.ok) {
         throw new Error(`Failed to fetch data. Status: ${response.status}`);
